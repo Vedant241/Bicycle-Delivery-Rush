@@ -8,7 +8,7 @@ public class BicycleMovement : MonoBehaviour
     [SerializeField] private WheelCollider rearWheelCollider;
     [SerializeField] private Transform frontWheelMesh;
     [SerializeField] private Transform rearWheelMesh;
-    [SerializeField] private float moveSpeed = 200f;
+    [SerializeField] private float extraTorque = 200f;
     [SerializeField] private float steerValue = 50f;
     [SerializeField] private float turnSpeed = 80f;
     [SerializeField] private float rearBrakeTorque = 1000f;
@@ -56,7 +56,7 @@ public class BicycleMovement : MonoBehaviour
         float speedFactor = Mathf.Clamp01(1 - (currentSpeed / maxSpeed));
         float turnFactor = Mathf.Lerp(1.3f, 0.4f, currentSpeed / maxSpeed);
         transform.Rotate(0, moveInput.x * turnSpeed * turnFactor * Time.fixedDeltaTime, 0);
-        rearWheelCollider.motorTorque = moveInput.y * moveSpeed * speedFactor;
+        rearWheelCollider.motorTorque = moveInput.y * extraTorque * speedFactor;
         if (brakePerformed)
         {
             rearWheelCollider.brakeTorque = rearBrakeTorque;
