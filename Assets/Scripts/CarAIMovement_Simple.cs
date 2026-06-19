@@ -1,6 +1,7 @@
 using System;
 using System.Data.Common;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.Splines;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -27,6 +28,10 @@ public class CarAIMovement_Simple : MonoBehaviour
     [Header("Half Extents")]
     [SerializeField] private Vector3 halfExtents = new Vector3(2.7f,0.75f,2f);
 
+    [Header("Look Ahead Distance and Angle for the Boxcast")]
+    [SerializeField] private float lookAheadDistance = 0.07f;
+    [SerializeField] private float lookAheadAngle = 30f;
+
     //Rigidbody
     private Rigidbody rb;
 
@@ -38,6 +43,9 @@ public class CarAIMovement_Simple : MonoBehaviour
     private bool isBraking = false;
     private bool canMove;
     private bool canTurn;
+
+    //Vector3 for direction of Boxcast
+    private Vector3 boxCastDirection;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -45,6 +53,8 @@ public class CarAIMovement_Simple : MonoBehaviour
         currentSpeed = 0f;
         canMove = true;
         canTurn = true;
+
+        boxCastDirection = transform.forward;
 
         splineLength = splinePath.CalculateLength();
 
@@ -66,6 +76,7 @@ public class CarAIMovement_Simple : MonoBehaviour
         //TestRoadIntersection();
         Movement();
         Rotation();
+        CheckForTurn();
     }
     private void Movement()
     {
@@ -95,13 +106,13 @@ public class CarAIMovement_Simple : MonoBehaviour
         Vector3 tangent = (Vector3)splinePath.EvaluateTangent(t);
 
         Quaternion rotation = Quaternion.LookRotation(tangent);
-        rb.MoveRotation(Quaternion.Slerp(rb.rotation, rotation, rotateSpeed));
+        rb.MoveRotation(Quaternion.Slerp(rb.rotation, rotation, rotateSpeed * Time.fixedDeltaTime));
     }
     private void TestObstacles(LayerMask layer)
     {
         RaycastHit hit;
         Vector3 origin = transform.position + transform.forward * 2f;
-        if (Physics.BoxCast(origin, halfExtents, transform.forward, out hit, transform.rotation, currentSpeed + 1f ,layer))
+        if (Physics.BoxCast(origin, halfExtents, boxCastDirection, out hit, transform.rotation, currentSpeed + 1f ,layer))
         {
             //Debug.Log("Hit");
             //Debug.Log(hit.distance);
@@ -151,9 +162,9 @@ public class CarAIMovement_Simple : MonoBehaviour
                 isBraking = false;
             }
         }
-        Debug.DrawRay(transform.position, transform.forward * currentSpeed , Color.green);
+        Debug.DrawRay(transform.position, boxCastDirection * currentSpeed , Color.green);
     }
-    private void DecelerateTheCar(float minAmount, float decelerationMultiplier)
+    public void DecelerateTheCar(float minAmount, float decelerationMultiplier)
     {
         currentSpeed -= decelerationRate * decelerationMultiplier * Time.fixedDeltaTime;
         currentSpeed = Mathf.Clamp(currentSpeed, minAmount, maxSpeed);
@@ -162,7 +173,7 @@ public class CarAIMovement_Simple : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 origin = transform.position + transform.forward * 2f;
-        if (Physics.BoxCast(origin, halfExtents, transform.forward, out hit, transform.rotation, currentSpeed, trafficLayer))
+        if (Physics.BoxCast(origin, halfExtents, boxCastDirection, out hit, transform.rotation, currentSpeed, trafficLayer))
         {
             if(hit.collider.TryGetComponent<TrafficSignal>(out TrafficSignal signal))
             {
@@ -198,7 +209,7 @@ public class CarAIMovement_Simple : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 origin = transform.position + transform.forward * 2f;
-        if (Physics.BoxCast(origin, halfExtents, transform.forward, out hit, transform.rotation, currentSpeed, roadIntersectionLayer))
+        if (Physics.BoxCast(origin, halfExtents, boxCastDirection, out hit, transform.rotation, currentSpeed, roadIntersectionLayer))
         {
             if(hit.collider.TryGetComponent<RoadIntersectionCheck>(out RoadIntersectionCheck intersectionCheck))
             {
@@ -222,6 +233,57 @@ public class CarAIMovement_Simple : MonoBehaviour
                     canMove = true;
                 }
             }
+        }
+    }
+    // Getter and Setter Methods for TrafficManager to access the t value and current speed of the car
+    public float GetTValue()
+    {
+        return t;
+    }
+    public float GetCurrentSpeed()
+    {
+        return currentSpeed;
+    }
+    public SplineContainer GetSplinePath()
+    {
+        return splinePath;
+    }
+    public void SetCanMove(bool canMove)
+    {
+        this.canMove = canMove;
+    }
+    public void SetCanTurn(bool canTurn)
+    {
+        this.canTurn = canTurn;
+    }
+    private void CheckForTurn()
+    {
+        Vector3 position = (Vector3)splinePath.EvaluatePosition(t);
+        Vector3 tangent = ((Vector3)splinePath.EvaluateTangent(t)).normalized;
+
+        float angle = Mathf.Atan2(tangent.x,tangent.z) * Mathf.Rad2Deg;
+
+        Vector3 positonLookAhead = (Vector3)splinePath.EvaluatePosition(t + lookAheadDistance);
+        Vector3 tangentLookAhead = ((Vector3)splinePath.EvaluateTangent(t + lookAheadDistance)).normalized;
+
+        float futureAngle = Mathf.Atan2(tangentLookAhead.x, tangentLookAhead.z) * Mathf.Rad2Deg;
+        
+        float difference = Mathf.DeltaAngle(angle, futureAngle);
+
+        //Debug.Log(difference);
+
+        if(Mathf.Abs(difference) > 10f)
+        {
+            //Right Turn Detected
+            boxCastDirection = Quaternion.Euler(0, lookAheadAngle, 0) * transform.forward;
+        }else if(Mathf.Abs(difference) < -10f)
+        {
+            //Left Turn Detected
+            boxCastDirection = Quaternion.Euler(0, -lookAheadAngle, 0) * transform.forward;
+        }
+        else
+        {
+            boxCastDirection = transform.forward;
         }
     }
 }
