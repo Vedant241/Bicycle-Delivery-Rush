@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class RoadIntersectionCheck : MonoBehaviour
 {
+    [SerializeField] private int objectInsideIntersection;
+
     public bool canMove;
     void Start()
     {
@@ -9,14 +11,23 @@ public class RoadIntersectionCheck : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        canMove = false;
+        if (other.gameObject.layer == objectInsideIntersection)
+        {
+            canMove = false;
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        canMove = true;
+        if (other.gameObject.layer == objectInsideIntersection)
+        {
+            canMove = true;
+        }
     }
     private void OnTriggerStay(Collider other)
     {
-        canMove = false;
+        if (other.gameObject.layer == objectInsideIntersection)
+        {
+            canMove = false;
+        }
     }
 }

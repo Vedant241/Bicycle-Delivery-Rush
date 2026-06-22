@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 6307877}
   - component: {fileID: 6307876}
   - component: {fileID: 6307875}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,6 +1215,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 176
@@ -1526,6 +1530,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -2034,7 +2042,7 @@ GameObject:
   - component: {fileID: 55243048}
   - component: {fileID: 55243047}
   - component: {fileID: 55243046}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2147,7 +2155,7 @@ GameObject:
   - component: {fileID: 55335029}
   - component: {fileID: 55335028}
   - component: {fileID: 55335027}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2938,7 +2946,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69210888}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3678,13 +3686,13 @@ GameObject:
   - component: {fileID: 88249949}
   - component: {fileID: 88249948}
   - component: {fileID: 88249947}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &88249947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3705,7 +3713,7 @@ MonoBehaviour:
   startOffset: 0
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -3714,6 +3722,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.7, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &88249948
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3793,7 +3802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 89364556}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4173,7 +4182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 101129157}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7714,7 +7723,7 @@ GameObject:
   - component: {fileID: 178370049}
   - component: {fileID: 178370048}
   - component: {fileID: 178370047}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8619,7 +8628,7 @@ GameObject:
   - component: {fileID: 212214809}
   - component: {fileID: 212214808}
   - component: {fileID: 212214807}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8789,7 +8798,7 @@ GameObject:
   - component: {fileID: 215401223}
   - component: {fileID: 215401222}
   - component: {fileID: 215401221}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9357,7 +9366,7 @@ GameObject:
   - component: {fileID: 230703180}
   - component: {fileID: 230703179}
   - component: {fileID: 230703178}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9780,7 +9789,7 @@ GameObject:
   - component: {fileID: 239854897}
   - component: {fileID: 239854896}
   - component: {fileID: 239854895}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10422,7 +10431,7 @@ GameObject:
   - component: {fileID: 256313572}
   - component: {fileID: 256313571}
   - component: {fileID: 256313570}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10449,7 +10458,7 @@ MonoBehaviour:
   startOffset: 0
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -10458,6 +10467,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.5, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &256313571
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10871,6 +10881,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -12540,7 +12554,7 @@ GameObject:
   - component: {fileID: 318395134}
   - component: {fileID: 318395133}
   - component: {fileID: 318395132}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13046,7 +13060,7 @@ GameObject:
   - component: {fileID: 331019669}
   - component: {fileID: 331019668}
   - component: {fileID: 331019667}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16604,7 +16618,7 @@ GameObject:
   - component: {fileID: 413581727}
   - component: {fileID: 413581726}
   - component: {fileID: 413581725}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17392,6 +17406,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 234
@@ -17858,7 +17876,7 @@ GameObject:
   - component: {fileID: 443210223}
   - component: {fileID: 443210222}
   - component: {fileID: 443210221}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17885,7 +17903,7 @@ MonoBehaviour:
   startOffset: 0.35
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -17894,6 +17912,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.7, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &443210222
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18530,6 +18549,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 247
@@ -18680,6 +18703,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -18915,6 +18942,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -21356,6 +21387,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 264
@@ -21423,6 +21458,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 265
@@ -21486,7 +21525,7 @@ GameObject:
   - component: {fileID: 551533451}
   - component: {fileID: 551533450}
   - component: {fileID: 551533449}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22266,7 +22305,7 @@ GameObject:
   - component: {fileID: 567658086}
   - component: {fileID: 567658085}
   - component: {fileID: 567658084}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23394,6 +23433,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 276
@@ -23601,6 +23644,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -23868,7 +23915,7 @@ GameObject:
   - component: {fileID: 613279499}
   - component: {fileID: 613279498}
   - component: {fileID: 613279497}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23978,7 +24025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 614293691}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25056,6 +25103,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
       value: 289
@@ -25774,6 +25825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1 &658778032 stripped
 GameObject:
@@ -26509,7 +26561,7 @@ GameObject:
   - component: {fileID: 675921172}
   - component: {fileID: 675921171}
   - component: {fileID: 675921170}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27717,6 +27769,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 307
@@ -28059,7 +28115,7 @@ GameObject:
   - component: {fileID: 707428672}
   - component: {fileID: 707428671}
   - component: {fileID: 707428670}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29464,6 +29520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1 &748829833 stripped
 GameObject:
@@ -29759,6 +29816,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -30510,6 +30571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1 &780326487 stripped
 GameObject:
@@ -30970,6 +31032,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 320
@@ -31198,7 +31264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 801046339}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31777,7 +31843,7 @@ GameObject:
   - component: {fileID: 812923561}
   - component: {fileID: 812923560}
   - component: {fileID: 812923559}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32838,6 +32904,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 338
@@ -33416,6 +33486,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
       value: 343
@@ -33611,6 +33685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &858121806
 PrefabInstance:
@@ -35076,7 +35151,7 @@ GameObject:
   - component: {fileID: 907130213}
   - component: {fileID: 907130212}
   - component: {fileID: 907130211}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35576,7 +35651,7 @@ GameObject:
   - component: {fileID: 917236900}
   - component: {fileID: 917236899}
   - component: {fileID: 917236898}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35942,6 +36017,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 354
@@ -36073,6 +36152,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -37796,6 +37879,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 365
@@ -38557,7 +38644,7 @@ GameObject:
   - component: {fileID: 995567382}
   - component: {fileID: 995567381}
   - component: {fileID: 995567380}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38584,7 +38671,7 @@ MonoBehaviour:
   startOffset: 0.1
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -38593,6 +38680,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.7, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &995567381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -39109,7 +39197,7 @@ GameObject:
   - component: {fileID: 1011016080}
   - component: {fileID: 1011016079}
   - component: {fileID: 1011016078}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39773,6 +39861,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 376
@@ -39924,7 +40016,7 @@ GameObject:
   - component: {fileID: 1031108417}
   - component: {fileID: 1031108416}
   - component: {fileID: 1031108415}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40040,6 +40132,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -40276,6 +40372,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
@@ -41343,6 +41443,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
       value: 395
@@ -41543,7 +41647,7 @@ GameObject:
   - component: {fileID: 1078832985}
   - component: {fileID: 1078832984}
   - component: {fileID: 1078832983}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42049,6 +42153,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 400
@@ -42339,7 +42447,7 @@ GameObject:
   - component: {fileID: 1095525955}
   - component: {fileID: 1095525954}
   - component: {fileID: 1095525953}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43324,6 +43432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1118930650
 PrefabInstance:
@@ -43813,7 +43922,7 @@ GameObject:
   - component: {fileID: 1127345715}
   - component: {fileID: 1127345714}
   - component: {fileID: 1127345713}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43840,7 +43949,7 @@ MonoBehaviour:
   startOffset: 0.05
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -43849,6 +43958,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.7, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &1127345714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44862,7 +44972,7 @@ GameObject:
   - component: {fileID: 1143384974}
   - component: {fileID: 1143384973}
   - component: {fileID: 1143384972}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45059,7 +45169,7 @@ GameObject:
   - component: {fileID: 1144567290}
   - component: {fileID: 1144567289}
   - component: {fileID: 1144567288}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45384,7 +45494,7 @@ Transform:
   m_GameObject: {fileID: 1146790923}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23786488, y: 0, z: 0, w: 0.9712983}
-  m_LocalPosition: {x: -33.82, y: 4.738, z: -113.49}
+  m_LocalPosition: {x: -33.82, y: 4.738, z: -120.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45512,7 +45622,7 @@ GameObject:
   - component: {fileID: 1148269684}
   - component: {fileID: 1148269683}
   - component: {fileID: 1148269682}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46842,7 +46952,7 @@ GameObject:
   - component: {fileID: 1176098257}
   - component: {fileID: 1176098256}
   - component: {fileID: 1176098255}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47793,7 +47903,7 @@ GameObject:
   - component: {fileID: 1195419988}
   - component: {fileID: 1195419987}
   - component: {fileID: 1195419986}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47820,7 +47930,7 @@ MonoBehaviour:
   startOffset: 0.15
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -47829,6 +47939,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.7, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &1195419987
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47908,7 +48019,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1197515868}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48480,7 +48591,7 @@ GameObject:
   - component: {fileID: 1221389864}
   - component: {fileID: 1221389863}
   - component: {fileID: 1221389862}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48507,7 +48618,7 @@ MonoBehaviour:
   startOffset: 0.25
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -48516,6 +48627,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.7, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &1221389863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48628,7 +48740,7 @@ GameObject:
   - component: {fileID: 1223268244}
   - component: {fileID: 1223268243}
   - component: {fileID: 1223268242}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48919,7 +49031,7 @@ GameObject:
   - component: {fileID: 1226410144}
   - component: {fileID: 1226410143}
   - component: {fileID: 1226410142}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49883,6 +49995,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 462
@@ -50270,7 +50386,7 @@ GameObject:
   - component: {fileID: 1256023155}
   - component: {fileID: 1256023154}
   - component: {fileID: 1256023153}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51294,6 +51410,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 474
@@ -51387,6 +51507,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -53579,6 +53703,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
       value: 492
@@ -53871,7 +53999,7 @@ GameObject:
   - component: {fileID: 1327752345}
   - component: {fileID: 1327752344}
   - component: {fileID: 1327752343}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54351,6 +54479,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 496
@@ -54495,7 +54627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1348358954}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54825,6 +54957,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 526
@@ -55060,6 +55196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1365240900
 PrefabInstance:
@@ -55072,6 +55209,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
@@ -55392,6 +55533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1369059883
 PrefabInstance:
@@ -57044,7 +57186,7 @@ GameObject:
   - component: {fileID: 1398091666}
   - component: {fileID: 1398091665}
   - component: {fileID: 1398091664}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57385,7 +57527,7 @@ GameObject:
   - component: {fileID: 1402299620}
   - component: {fileID: 1402299619}
   - component: {fileID: 1402299618}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57726,7 +57868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1406534550
 Transform:
   m_ObjectHideFlags: 0
@@ -58336,7 +58478,7 @@ GameObject:
   - component: {fileID: 1417103453}
   - component: {fileID: 1417103452}
   - component: {fileID: 1417103451}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Car(NoWheelcolliders) (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58363,7 +58505,7 @@ MonoBehaviour:
   startOffset: 0.3
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 136
   trafficLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -58372,6 +58514,7 @@ MonoBehaviour:
     m_Bits: 256
   halfExtents: {x: 2.7, y: 0.75, z: 2}
   lookAheadDistance: 0.07
+  lookAheadAngle: 30
 --- !u!54 &1417103452
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58889,6 +59032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1425794123
 PrefabInstance:
@@ -59780,6 +59924,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 556
@@ -60208,6 +60356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1455082049
 PrefabInstance:
@@ -61514,6 +61663,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 571
@@ -62546,6 +62699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1532056469
 PrefabInstance:
@@ -64054,6 +64208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1 &1585218899 stripped
 GameObject:
@@ -64313,7 +64468,7 @@ GameObject:
   - component: {fileID: 1590562230}
   - component: {fileID: 1590562229}
   - component: {fileID: 1590562228}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64513,6 +64668,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
@@ -68079,6 +68238,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 636
@@ -68931,7 +69094,7 @@ Transform:
   m_GameObject: {fileID: 1704015169}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23786488, y: 0, z: 0, w: 0.9712983}
-  m_LocalPosition: {x: -33.82, y: 4.738, z: -113.49}
+  m_LocalPosition: {x: -33.82, y: 4.738, z: -120.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -69085,6 +69248,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -69240,7 +69407,7 @@ GameObject:
   - component: {fileID: 1708066523}
   - component: {fileID: 1708066522}
   - component: {fileID: 1708066521}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69865,6 +70032,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 648
@@ -70235,6 +70406,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 651
@@ -70535,6 +70710,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 653
@@ -70773,7 +70952,7 @@ GameObject:
   - component: {fileID: 1746762576}
   - component: {fileID: 1746762575}
   - component: {fileID: 1746762574}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71702,6 +71881,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -72919,6 +73102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1803467023
 PrefabInstance:
@@ -73045,6 +73229,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -73459,6 +73647,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
       value: 674
@@ -73613,7 +73805,7 @@ GameObject:
   - component: {fileID: 1812293338}
   - component: {fileID: 1812293337}
   - component: {fileID: 1812293336}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74457,7 +74649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1832426809}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Vehicle_Car_separate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74709,6 +74901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1 &1835808280 stripped
 GameObject:
@@ -74749,7 +74942,7 @@ GameObject:
   - component: {fileID: 1837197427}
   - component: {fileID: 1837197426}
   - component: {fileID: 1837197425}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77021,7 +77214,7 @@ GameObject:
   - component: {fileID: 1901363832}
   - component: {fileID: 1901363831}
   - component: {fileID: 1901363830}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78110,6 +78303,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
       propertyPath: m_RootOrder
       value: 711
@@ -79009,6 +79206,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -81070,6 +81271,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 712
@@ -81242,6 +81447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &1994871853
 PrefabInstance:
@@ -82124,6 +82330,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -83013,6 +83223,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 728
@@ -83158,6 +83372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &2029241403
 PrefabInstance:
@@ -83758,7 +83973,7 @@ GameObject:
   - component: {fileID: 2038219395}
   - component: {fileID: 2038219394}
   - component: {fileID: 2038219393}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Wheel_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83874,6 +84089,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -84215,6 +84434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4283c0a99b8b748bd118dcb6149c09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RoadIntersectionCheck
+  objectInsideIntersection: 0
   canMove: 0
 --- !u!1001 &2046682920
 PrefabInstance:
@@ -87171,6 +87391,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 750
@@ -87437,6 +87661,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 751
@@ -87679,6 +87907,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
       value: 756
@@ -87779,6 +88011,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
       propertyPath: m_RootOrder
@@ -90095,7 +90331,7 @@ Transform:
   m_GameObject: {fileID: 104623878323940737}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.82, y: 3.128, z: -110.4}
+  m_LocalPosition: {x: -33.82, y: 3.128, z: -117.8}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:

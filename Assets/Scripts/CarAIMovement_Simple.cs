@@ -1,9 +1,5 @@
-using System;
-using System.Data.Common;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.Splines;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class CarAIMovement_Simple : MonoBehaviour
 {
@@ -20,7 +16,7 @@ public class CarAIMovement_Simple : MonoBehaviour
     [Header("StartOffset of Spline")]
     [SerializeField, Range(0f, 1f)] private float startOffset;
 
-    [Header("Obsacle LayerMask")]
+    [Header("Obstacle LayerMask")]
     [SerializeField] private LayerMask obstacleLayer;
     [SerializeField] private LayerMask trafficLayer;
     [SerializeField] private LayerMask roadIntersectionLayer;
@@ -73,7 +69,7 @@ public class CarAIMovement_Simple : MonoBehaviour
         //Debug.Log(currentSpeed);
         TestObstacles(obstacleLayer);
         TestTrafficSignal();
-        //TestRoadIntersection();
+        TestRoadIntersection();
         Movement();
         Rotation();
         CheckForTurn();
@@ -219,12 +215,6 @@ public class CarAIMovement_Simple : MonoBehaviour
                     canTurn = false;
                     isBraking = true;   
                     DecelerateTheCar(0f, 20f);
-                }else if(hit.distance < 10f)
-                {
-                    canMove = true;
-                    canTurn = true;
-                    isBraking = false;
-                    DecelerateTheCar(10f, 4f);
                 }
                 else
                 {
@@ -258,13 +248,11 @@ public class CarAIMovement_Simple : MonoBehaviour
     }
     private void CheckForTurn()
     {
-        Vector3 position = (Vector3)splinePath.EvaluatePosition(t);
         Vector3 tangent = ((Vector3)splinePath.EvaluateTangent(t)).normalized;
 
         float angle = Mathf.Atan2(tangent.x,tangent.z) * Mathf.Rad2Deg;
 
-        Vector3 positonLookAhead = (Vector3)splinePath.EvaluatePosition(t + lookAheadDistance);
-        Vector3 tangentLookAhead = ((Vector3)splinePath.EvaluateTangent(t + lookAheadDistance)).normalized;
+        Vector3 tangentLookAhead = ((Vector3)splinePath.EvaluateTangent((t + lookAheadDistance) % 1f)).normalized;
 
         float futureAngle = Mathf.Atan2(tangentLookAhead.x, tangentLookAhead.z) * Mathf.Rad2Deg;
         
@@ -272,11 +260,11 @@ public class CarAIMovement_Simple : MonoBehaviour
 
         //Debug.Log(difference);
 
-        if(Mathf.Abs(difference) > 10f)
+        if(difference > 10f)
         {
             //Right Turn Detected
             boxCastDirection = Quaternion.Euler(0, lookAheadAngle, 0) * transform.forward;
-        }else if(Mathf.Abs(difference) < -10f)
+        }else if(difference < -10f)
         {
             //Left Turn Detected
             boxCastDirection = Quaternion.Euler(0, -lookAheadAngle, 0) * transform.forward;

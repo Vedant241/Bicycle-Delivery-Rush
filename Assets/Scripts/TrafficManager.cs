@@ -10,25 +10,28 @@ public class TrafficManager : MonoBehaviour
     {
         
     }
-    void Update()
+    void FixedUpdate()
     {
         for(int i = 0; i < cars.Length - 1; i++)
         {
-            if(cars[i] != null)
+            for (int j = i + 1; j < cars.Length; j++)
             {
-                if(cars[i].GetSplinePath() == cars[i + 1].GetSplinePath())
+                if (cars[i] != null && cars[j] != null)
                 {
-                    if (cars[i].GetTValue() < cars[i + 1].GetTValue())
+                    if (cars[i].GetSplinePath() == cars[j].GetSplinePath())
                     {
-                        if (cars[i + 1].GetCurrentSpeed() < 3f)
+                        if (cars[i].GetTValue() < cars[j].GetTValue())
                         {
-                            //Debug.Log("Slow");
-                            cars[i].SetCanMove(false);
-                            cars[i].SetCanTurn(false);
-                            cars[i].DecelerateTheCar(0f, 20f);
+                            if (cars[j].GetCurrentSpeed() < 3f)
+                            {
+                                //Debug.Log("Slow");
+                                cars[i].SetCanMove(false);
+                                cars[i].SetCanTurn(false);
+                                cars[i].DecelerateTheCar(0f, 20f);
+                            }
                         }
                     }
-                } 
+                }
             }
         }
     }
